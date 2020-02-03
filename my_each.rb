@@ -1,5 +1,7 @@
 def my_each(array)
-array.each do |a|
- puts a
+  i = 0 
+    while i < array.length 
+      yield array [i]
+      i += 1
 end
 end
